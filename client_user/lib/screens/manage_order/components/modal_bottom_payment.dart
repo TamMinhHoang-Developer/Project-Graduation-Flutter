@@ -34,8 +34,6 @@ class _ModalBottomPaymentState extends State<ModalBottomPayment> {
   String payAmount = "10000";
   bool showResult = false;
 
-  final SECRET_KEY =
-      "SECRET KEY";
 
   @override
   Widget build(BuildContext context) {
