@@ -33,8 +33,9 @@ class _ModalBottomPaymentState extends State<ModalBottomPayment> {
   String payResult = "";
   String payAmount = "10000";
   bool showResult = false;
+
   final SECRET_KEY =
-      "sk_test_51NErBXGDIUTvV4PmuelNiZh2h5jdmS0cChahzQU6sHbBhc8Tech0IOHFhtFmqJps1seWr3qHlwepm2GYDx2B3P5y00GStQ5oQ0";
+      "SECRET KEY";
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +117,7 @@ class _ModalBottomPaymentState extends State<ModalBottomPayment> {
         orderInfo: 'Payment Order | Total $total',
         returnUrl: 'https://sandbox.vnpayment.vn/merchant_webapi/merchant.html',
         ipAdress: '10.2.0.133',
-        vnpayHashKey: 'ZAFDMRHXKPBBZEKLOIXHJWWXYEUYBWDJ',
+        vnpayHashKey: "VNPHASHKEY",
         vnPayHashType: VNPayHashType.HMACSHA512);
     VNPAYFlutter.instance.show(
       paymentUrl: paymentUrl,
